@@ -8,8 +8,14 @@ use App\Services\PracticeInterface;
 
 class PracticeController extends Controller
 {
-    function index(PracticeInterface $practice)
+    private $practice;
+    function __construct(PracticeInterface $practice)
     {
-        $practice->getName();
+        $this->practice = $practice;
+
+    }
+    function index()
+    {
+       $this->practice->getName();
     }
 }
