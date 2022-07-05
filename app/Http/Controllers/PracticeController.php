@@ -18,4 +18,9 @@ class PracticeController extends Controller
     {
        $this->practice->getName();
     }
+
+    function userName()
+    {
+        $this->practice->getUserName();
+    }
 }

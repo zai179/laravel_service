@@ -7,6 +7,6 @@ class UserRepository implements UserInterface
 {
     function userName()
     {
-        return "This is user name ahamd";
+        echo "This is user name ahamd";
     }
 }

@@ -18,3 +18,4 @@ Route::get('/', function () {
     return view('welcome');
 });
 Route::get('test', [PracticeController::class, 'index']);
+Route::get('user-name', [PracticeController::class, 'userName']);
