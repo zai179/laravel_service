@@ -19,3 +19,5 @@ Route::get('/', function () {
 });
 Route::get('test', [PracticeController::class, 'index']);
 Route::get('user-name', [PracticeController::class, 'userName']);
+Route::get('get-order', [PracticeController::class, 'order']);
+Route::get('get-cart', [PracticeController::class, 'cart']);

@@ -7,11 +7,9 @@ use App\Repositories\RepositoryInterface\CustomerInterface;
 class PracticeService  implements PracticeInterface
 {
     private $user;
-    private $customer;
-    public function __construct(UserInterface $user, CustomerInterface $customer)
+    public function __construct(UserInterface $user)
     {
         $this->user = $user;
-        $this->customer = $customer;
 
     }
     function getUserName()
@@ -25,6 +23,6 @@ class PracticeService  implements PracticeInterface
 
     function getCustomerName()
     {
-        $this->customer->customerName();
+        // $this->customer->customerName();
     }
 }
